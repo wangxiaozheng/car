@@ -1,0 +1,97 @@
+<a href="javascript:void(0)" class="sideBtn"></a>
+<div class="location">
+	<p>当前位置：样品中心 > 样品信息 </p>
+	<span id="showtime" class="date"></span>
+</div>
+
+<div class="content">
+	<div class="search">
+		<label>样品编号：</label>
+		<input type="text" placeholder="样品编号" id="sampleNum" />
+		<label>开始日期：</label>
+		<input type="text" placeholder="开始日期" id="start" class="laydate-icon" />
+		<label>结束日期：</label>
+		<input type="text" placeholder="结束日期" id="end" class="laydate-icon" />
+		<a href="javascript:void(0)" class="search_btn">查询</a>
+	</div>
+
+	<div class="table_wrap">
+		<div class="loading"><span></span></div>
+		<table cellpadding="0" cellspacing="0" border="0" class="table">
+			<thead>
+				<tr>
+					<th>
+						<input type="checkbox" id="selectAll" />
+						<label for="selectAll">全选</label>
+					</th>
+					<th>样品编号</th>
+					<th>被检者姓名</th>
+					<th>样品类型</th>
+					<th>收样日期</th>
+					<th>是否已建库</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody>
+
+			</tbody>
+		</table>
+
+	</div>
+
+	<div class="operation">
+		<a href="javascript:void(0)" class="add">添加样品信息</a>
+		<a href="javascript:void(0)">删除样品信息</a>
+		<a href="javascript:void(0)">批量导入</a>
+	</div>
+</div>
+<div class="mask_layer"></div>
+<div class="modal" id="modal">
+	<a href="javascript:void(0)" class="close" onclick="closeModal();" title="关闭"></a>
+	<div class="modal_header">
+		<h3>添加样品信息</h3>
+	</div>
+	<div class="modal_body">
+		<div class="sample">
+			<p>
+				<label>样品编号：</label>
+				<input type="text" id="sampleId" />
+			</p>
+			<p>
+				<label>被检者姓名：</label>
+				<input type="text" id="sampleName" />
+			</p>
+			<p>
+				<label>样品类型：</label>
+				<select id="sampleType">
+					<option>--请选择--</option>
+					<option>类型一</option>
+					<option>--请选择--</option>
+					<option>--请选择--</option>
+					<option>--请选择--</option>
+					<option>--请选择--</option>
+					<option>--请选择--</option>
+					<option>--请选择--</option>
+					<option>--请选择--</option>
+				</select>
+			</p>
+			<p>
+				<label>收样日期：</label>
+				<input class="laydate-icon" id="sampleDate" placeholder="日期">
+			</p>
+			<p>
+				<label>是否已建库：</label>
+				<select id="sampleLibrary">
+					<option>是</option>
+					<option>否</option>
+				</select>
+			</p>
+		</div>
+
+	</div>
+	<div class="modal_footer">
+		<a class="btn btn_ok" href="javascript:void(0)" id="ok">确 认</a>
+		<a class="btn" href="javascript:void(0)" onclick="closeModal();">关 闭</a>
+	</div>
+</div>
+<script type="text/javascript" src="js/sample.js"></script>

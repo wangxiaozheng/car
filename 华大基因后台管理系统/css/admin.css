@@ -1,0 +1,241 @@
+.header {
+	height: 90px;
+	background:#0097e3 url(../images/header_bg.jpg) no-repeat top right;
+	transition: all 300ms;
+}
+.logo {
+	float: left;
+	width: 450px;
+	height: 90px;
+	background: url(../images/logo.png) no-repeat center;
+}
+a.fullScreen {
+	float: right;
+	padding: 20px;
+	color: #fff;
+	background: red;
+	position: fixed;
+	top:0;
+	right: 0;
+	z-index: 9999;
+}
+
+
+.main {
+	width: 100%;
+	min-height: 470px;
+	position: absolute;
+	top:90px;
+	left:0;
+	bottom: 0;
+	transition: all 300ms;
+}
+.main_left {
+	width: 190px;
+	border-right: 1px solid #ccc;
+	background: #f3fafe;
+	overflow: auto;
+	box-sizing: border-box;
+	position: absolute;
+	top:0;
+	left:0;
+	bottom: 0;
+	transition: all 300ms;
+}
+.nav {
+	overflow: hidden;
+}
+.nav dt {
+	height: 50px;
+	line-height: 50px;
+	padding-left: 50px;
+}
+.nav dt.curr {
+	background: #e3ecf1;
+	border-bottom: 1px solid #2798e3;
+}
+.nav dd {
+	overflow: hidden;
+	display: none;
+}
+
+.nav dd a {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 50px;
+}
+
+
+
+
+
+
+
+
+.main_right {
+	min-width: 810px;
+	background: #f6f7fb;
+	position: absolute;
+	top:0;
+	left:190px;
+	right: 0;
+	bottom: 0;
+	transition: all 300ms;
+}
+.loading {
+	background: #fff;
+	background: #f0f0f0\0;
+	position: absolute;
+	top:0;
+	left:0;
+	right: 0;
+	bottom: 0;
+}
+.loading span {
+	display: block;
+	width: 72px;
+	height: 72px;
+	background: url(../images/loading.png) no-repeat;
+	background: url(../images/icon_loading.gif) no-repeat\0;
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin: -36px 0 0 -36px;
+	animation: loading 800ms linear infinite;
+}
+@keyframes loading{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+.sideBtn {
+	display: block;
+	width: 10px;
+	height: 58px;
+	background: url(../images/sideBar.png) no-repeat;
+	position: absolute;
+	top:50%;
+	left:0;
+	z-index: 9;
+	margin-top:-29px;
+}
+.sideBtnCurr {
+	background-position: top right;
+}
+.location {
+	height: 50px;
+	padding: 0 20px;
+	background: #eef8fe;
+	border-bottom: 1px solid #d1d2d6;
+}
+.location p {
+	float: left;
+	height: 50px;
+	line-height: 50px;
+}
+.location span {
+	float: right;
+	height: 50px;
+	line-height: 50px;
+}
+.content {
+	padding: 15px;
+	position: absolute;
+	top:50px;
+	left:0;
+	right: 0;
+	bottom: 0;
+}
+.search {
+	padding: 15px 0;
+	background: #e8eaf1;
+	border: 1px solid #ccc;
+	overflow: hidden;
+}
+.search label {
+	float: left;
+	width: 86px;
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+}
+.search input[type="text"] {
+	float: left;
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+	border: 1px solid #ccc;
+	background: #fff;
+	box-sizing: border-box;
+}
+a.search_btn {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 20px;
+	text-align: center;
+	color: #fff;
+	background: #299be4;
+	margin-left:10px;
+}
+.table_wrap {
+	
+
+	position: absolute;
+	top:90px;
+	left:15px;
+	right: 15px;
+	bottom: 70px;
+	overflow: auto;
+}
+.table {
+	
+}
+.table thead tr th , .table tbody tr td {
+	height: 40px;
+	vertical-align: middle;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+.table span.formCheckbox{
+	float: none;
+	display: inline-block;
+}
+.table tbody tr td a {
+	padding: 0 5px;
+}
+.table tbody tr.curr {
+	color: #fff;
+	background: #0097E3;
+}
+.table tbody tr.curr td a {
+	color: #fff;
+}
+
+.operation {
+	padding: 15px;
+	background: #e8eaf1;
+	overflow: hidden;
+	position: absolute;
+	bottom:0;
+	left:15px;
+	right: 15px;
+	overflow: hidden;
+}
+.operation a {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 20px;
+	text-align: center;
+	color: #fff;
+	background: #299be4;
+	margin-left:10px;
+}
+

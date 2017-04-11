@@ -1,0 +1,134 @@
+﻿@charset "utf-8";
+/*
+ * Copyright(c) 2015, CSS
+ */
+
+/* @Global 常用标签_@Start */
+html {
+	font-family: sans-serif;
+}
+html,body {
+	height: 100%;
+}
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,tr,a{
+	margin:0 auto;
+	padding:0;
+}
+body{
+	min-width: 1000px;
+	min-height: 560px;
+	color:#333;
+	background: #f1f1f1;
+	font: 12px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	SCROLLBAR-FACE-COLOR: #f0f0f0;
+	SCROLLBAR-HIGHLIGHT-COLOR: #f5f5f5;
+	SCROLLBAR-SHADOW-COLOR: #8b8c8c;
+	SCROLLBAR-3DLIGHT-COLOR: #fff;
+	SCROLLBAR-ARROW-COLOR: #240024;
+	SCROLLBAR-TRACK-COLOR: #fcfcfc;
+	SCROLLBAR-DARKSHADOW-COLOR: #ccc;
+	SCROLLBAR-BASE-COLOR: #f4f4f4;
+}
+table {
+	width: 100%;
+	border-collapse:collapse;
+}
+td,th{font-size:12px;}
+/*
+ * 标签属性
+ * @overlay textarea,input
+ * @desc 强制输入时内容超出时换行
+ */
+input,select{
+	font-size:14px;
+	vertical-align:middle;
+}
+button{ text-align:center;border:none;}
+textarea,input{
+	word-wrap:break-word;
+	word-break:break-all;
+	border:none;
+	font:12px/22px '微软雅黑',Arial;
+	color: #333;
+	resize: none;
+	outline:none;
+	background: none;
+}
+hr {
+	height:0px;
+	border-top:1px solid #DDDDDD;
+	border-bottom:1px solid #FFFFFF;
+	z-index:1;
+}
+/*
+ * 清除ul列表标记的样式
+ * @overlay  ol,ul
+ * @desc	ul列表更多的用在不需要列表前置符号的样式里
+ */
+ul,ol{list-style-type:none;}
+/*
+ * 定义图片边框
+ * @overlay img
+ * @desc	当图片作为链接内容被填充时，会有默认边框出现，重定义掉
+ */
+img{border:0 none;vertical-align: top;}
+/*
+ * 定义默认的链接样式
+ * @overlay a
+ * @desc	仅仅是作为默认样式提供，可以在各自的实例中覆盖掉
+ */
+a{
+	color:#888888;
+	text-decoration: none;
+}
+a:hover{
+	color:#41a8f7;
+	text-decoration: none;
+}
+/*    去掉链接的虚线框     */
+a {outline: none; blr:expression(this.onFocus=this.blur());}
+
+/*
+ * 定义H系列标签
+ * @overlay HN
+ * @desc  覆盖H系列标签默认属性
+ */
+ h1,h2,h3,h4,h5,h6{
+	font-style:normal;
+	font-weight:normal;
+ }
+h1{ font-size:48px;}
+h2 {font-size: 32px;}
+h3 {font-size: 28px;}
+h4 {font-size: 24px;}
+h5 {font-size: 18px;}
+h6 {font-size: 14px;}
+
+em,i,p,dfn,b,strong {
+	font-style:normal;
+	font-weight: normal;
+}
+.line {
+	display: block;
+	height: 1px;
+	line-height: 1px;
+	font-size: 1px;
+	border-top: 1px dashed #cfcfcf;
+	margin: 7px;
+}
+.clear {
+	clear: both;
+}
+/* @Global 常用标签_@end */
+
+
+/*  在终极页面中调用该通用样式时,应该注意显示效果的不同,因为后台上传信息时编辑器里面样式并没有调用本默认样式表.
+ *
+ *  所以在编辑器中标签会有默认的属性,用户在添加信息时,这些信息都是附带默认样式的.
+ *  如果用我们在终极页面也调用本默认CSS文件的话,许多标签如:p,td,li......标签默认样式都被取消,因此显示效不同.
+ *
+ *  解决办法:
+ *	在终极页面显示内容区域还原这些标签的默认属性.
+ *
+ */
+ 

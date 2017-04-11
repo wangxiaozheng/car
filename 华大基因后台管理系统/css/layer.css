@@ -1,0 +1,213 @@
+@charset "utf-8";
+/* CSS Document */
+
+.btn {
+    background: #6d6d6d;
+    border: 1px solid #6d6d6d;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    height: 38px;
+    line-height: 38px;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: center;
+    width: 160px;
+}
+.btn_small {
+    background: #6d6d6d;
+    border: 1px solid #6d6d6d;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: center;
+    width: 80px;
+}
+.btn_ok {
+    background: #ff4a00;
+    border: 1px solid #ff4a00;
+}
+.mask_layer{
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: #ccc;
+    opacity: 0.5;
+    filter:Alpha(opacity=50);
+    display: none;
+}
+.modal {
+    width: 800px;
+    height: 500px;
+    position: fixed;
+    top:-1000px;
+    left:0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    margin-top: -260px;
+    background: #fff;
+    box-shadow: 1px 1px 10px #a6a6a6;
+}
+.modal .close {
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    position: absolute;
+    top: 0;
+    right: -60px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    opacity: 0.8;
+    font-size: 36px;
+    background: #8c8c8c url("../images/icon_close.png") no-repeat center center;
+}
+.modal_header {
+    padding: 20px 0;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    margin: 0 30px;
+}
+.modal_header h3 {
+    font-size: 18px;
+    height: 30px;
+    line-height: 30px;
+    color: #333;
+}
+.modal_body {
+    padding:10px 30px;
+    height: 330px;
+    overflow: auto;
+    position: relative;
+}
+.modal_footer {
+    background: #f3f3f3;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    padding: 20px;
+}
+.modal_footer a.btn {
+    margin: 0 80px;
+}
+
+
+.confirm {
+    width: 380px;
+    height: 160px;
+    position: fixed;
+    top:-1000px;
+    left:0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    margin-top: -80px;
+    background: #fff;
+    box-shadow: 1px 1px 10px #a6a6a6;
+}
+.confirm_header {
+    height: 32px;
+    line-height: 32px;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    background: #f6f6f6;
+}
+
+.confirm_header h6 {
+    float: left;
+    font-size: 13px;
+    padding-left: 10px;
+    color: #333;
+}
+.confirm_header .close {
+    float: right;
+    width: 32px;
+    height: 32px;
+    background: url("../images/icon_close_small.png") center center no-repeat;
+}
+.confirm_body {
+    height: 42px;
+    padding: 20px;
+    overflow: auto;
+    position: relative;
+}
+.confirm_footer {
+    text-align: right;
+    padding: 10px;
+}
+.confirm_footer a.btn {
+    margin: 0 10px;
+}
+
+
+.prompt {
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 14px;
+    background: #ff4a00;
+    border-radius: 3px;
+    position: fixed;
+    top:50%;
+    left:0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    margin-top: -20px;
+    display: none;
+
+}
+
+/*.success {
+    padding: 15px;
+    background-color: #57a957;
+    background-repeat: repeat-x;
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#62c462), to(#57a957));
+    background-image: -moz-linear-gradient(top, #62c462, #57a957);
+    background-image: -ms-linear-gradient(top, #62c462, #57a957);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #62c462), color-stop(100%, #57a957));
+    background-image: -webkit-linear-gradient(top, #62c462, #57a957);
+    background-image: -o-linear-gradient(top, #62c462, #57a957);
+    background-image: linear-gradient(top, #62c462, #57a957);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#62c462', endColorstr='#57a957', GradientType=0);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    border-color: #57a957 #57a957 #3d773d;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #FFF;
+}
+
+.success .close {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    float: right;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 13.5px;
+    text-shadow: 0 1px 0 #ffffff;
+    filter: alpha(opacity=20);
+    -khtml-opacity: 0.2;
+    -moz-opacity: 0.2;
+    opacity: 0.2;
+    text-decoration: none;
+}
+.success .close:hover {
+    color: #000000;
+    text-decoration: none;
+    filter: alpha(opacity=40);
+    -khtml-opacity: 0.4;
+    -moz-opacity: 0.4;
+    opacity: 0.4;
+}*/

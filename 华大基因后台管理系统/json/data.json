@@ -1,0 +1,76 @@
+{
+	"sample" : [
+		{
+			"sampleId"    : "1001",
+			"sampleNum"   : "123456789",
+			"sampleName"  : "张三",
+			"sampleType"  : "口服",
+			"sampleDate"  : "2016-11-28",
+			"sampleBuild" : "是"
+		},
+		{
+			"sampleId"    : "1002",
+			"sampleNum"   : "1234567908",
+			"sampleName"  : "李四",
+			"sampleType"  : "外服",
+			"sampleDate"  : "2016-11-27",
+			"sampleBuild" : "否"
+		},
+		{
+			"sampleId"    : "1003",
+			"sampleNum"   : "987654322",
+			"sampleName"  : "王五",
+			"sampleType"  : "口服",
+			"sampleDate"  : "2016-11-26",
+			"sampleBuild" : "是"
+		},
+		{
+			"sampleId"    : "1004",
+			"sampleNum"   : "123456789",
+			"sampleName"  : "张三",
+			"sampleType"  : "口服",
+			"sampleDate"  : "2016-11-28",
+			"sampleBuild" : "是"
+		},
+		{
+			"sampleId"    : "1005",
+			"sampleNum"   : "1234567908",
+			"sampleName"  : "李四",
+			"sampleType"  : "外服",
+			"sampleDate"  : "2016-11-27",
+			"sampleBuild" : "否"
+		},
+		{
+			"sampleId"    : "1006",
+			"sampleNum"   : "987654322",
+			"sampleName"  : "王五",
+			"sampleType"  : "口服",
+			"sampleDate"  : "2016-11-26",
+			"sampleBuild" : "是"
+		},
+		{
+			"sampleId"    : "1007",
+			"sampleNum"   : "123456789",
+			"sampleName"  : "张三",
+			"sampleType"  : "口服",
+			"sampleDate"  : "2016-11-28",
+			"sampleBuild" : "是"
+		},
+		{
+			"sampleId"    : "1008",
+			"sampleNum"   : "1234567908",
+			"sampleName"  : "李四",
+			"sampleType"  : "外服",
+			"sampleDate"  : "2016-11-27",
+			"sampleBuild" : "否"
+		},
+		{
+			"sampleId"    : "1009",
+			"sampleNum"   : "987654322",
+			"sampleName"  : "王五",
+			"sampleType"  : "口服",
+			"sampleDate"  : "2016-11-26",
+			"sampleBuild" : "是"
+		}
+	]
+}

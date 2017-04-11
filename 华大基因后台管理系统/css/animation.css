@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.fadeout {
+    top: -1000px;
+    animation: fadeout .2s linear;
+    -moz-animation: fadeout .2s linear;
+    -webkit-animation: fadeout .2s linear;
+    -o-animation: fadeout .2s linear;
+}
+@keyframes fadeout
+{
+    from {top:50%}
+    to {top:-25%}
+}
+@-moz-keyframes fadeout /* Firefox */
+{
+    from {top:50%}
+    to {top:-25%}
+}
+@-webkit-keyframes fadeout /* Safari 和 Chrome */
+{
+    from {top:50%}
+    to {top:-25%}
+}
+@-o-keyframes fadeout /* Opera */
+{
+    from {top:50%}
+    to {top:-25%}
+}
+
+.fadein {
+    top:50%;
+    animation: fadein 0.2s linear;
+    -moz-animation: fadein 0.2s linear;
+    -webkit-animation: fadein 0.2s linear;
+    -o-animation: fadein 0.2s linear;
+}
+@keyframes fadein
+{
+    from {top:-25%}
+    to {top:50%}
+}
+@-moz-keyframes fadein /* Firefox */
+{
+    from {top:-25%}
+    to {top:50%}
+}
+@-webkit-keyframes fadein /* Safari 和 Chrome */
+{
+    from {top:-25%}
+    to {top:50%}
+}
+@-o-keyframes fadein /* Opera */
+{
+    from {top:-25%}
+    to {top:50%}
+}
